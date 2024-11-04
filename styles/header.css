@@ -6,7 +6,7 @@
 
 .logo img:hover {
   scale: 1.04;
-  border: 3px solid var(--orangish-color);
+  border: 3px solid var(--rose-color);
   transition: scale 180ms linear;
 }
 
@@ -18,7 +18,7 @@
   left: 0;
   top: 0;
   z-index: 111;
-  background: conic-gradient(#110b48, #68537d, #110b48);
+  background: var(--navy-color);
   margin-bottom: 3rem;
 }
 
@@ -43,7 +43,7 @@
     border: none;
     height: 5px;
     width: 1.5rem;
-    background-color: var(--orangish-color);
+    background-color: var(--rose-color);
     margin: 4px 0;
   }
 }
@@ -132,7 +132,7 @@
     from var(--rotate),
     transparent,
     180deg,
-    var(--orangish-color)
+    var(--rose-color)
   );
   position: absolute;
   top: 50%;

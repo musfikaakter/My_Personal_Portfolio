@@ -30,10 +30,11 @@
   --size-6xl: 3rem;
   --size-7xl: 4rem;
   --size-8xl: 5rem;
+  /* #0d1321 */
 
   /* colors */
-  --navy-color: #283c63;
-  --greyish-color: #fbe8d3;
+  --navy-color: #03071e;
+  --greyish-color: #fff;
   --orangish-color: #ff7069;
   --rose-color: #ff0066;
   --ash-color: #928a97;
@@ -112,8 +113,8 @@ section {
 }
 
 .nav__hover:hover {
-  background-color: rgba(17, 30, 56, 0.4);
-  color: var(--orangish-color);
+  background-color: rgba(146, 138, 151, 0.2);
+  color: var(--rose-color);
 }
 
 .page__title {
@@ -153,5 +154,28 @@ section {
 @keyframes textColor {
   to {
     background-position: -200%;
+  }
+}
+
+section {
+  position: relative;
+}
+
+.scroll_watcher {
+height: .4rem;
+background-color: #ff0066;
+position: fixed;
+top: 0;
+z-index: 999;
+width: 100%;
+scale: 0 1;
+transform-origin: left;
+animation: scroll_watcher linear;
+animation-timeline: scroll();
+}
+
+@keyframes scroll_watcher {
+  to {
+    scale: 1 1;
   }
 }

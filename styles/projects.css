@@ -25,12 +25,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 114, 107, 0.8);
+  background-color:rgba(255, 69, 134,.8);
   gap: 1rem;
 }
 
 .projects__image:hover::after {
-  background-color: rgba(255, 114, 107, 0.4);
+  background-color: rgba(255, 69, 134,.4);
   transition: background-color 300ms linear;
 }
 
@@ -54,6 +54,25 @@
 .projects__links {
   font-size: var(--size-xs);
 }
+
+/* // animation starts // */
+
+.projects__image > img,
+.projects__image::after {
+  animation: fade-in 1s linear;
+  animation-timeline: view();
+}
+
+@keyframes fade-in {
+  from {
+    scale: .86;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+/* // animation ends // */
 
 /* xs screen */
 
